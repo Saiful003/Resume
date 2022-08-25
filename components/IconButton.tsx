@@ -7,11 +7,21 @@ interface IProps {
   link?: string;
   border?: boolean;
   style?: string;
+  onClick?: () => void;
 }
 
-function IconButton({ icon, text, hover, link, border, style }: IProps) {
+function IconButton({
+  icon,
+  text,
+  hover,
+  link,
+  border,
+  style,
+  onClick,
+}: IProps) {
   return (
     <a
+      onClick={onClick}
       href={link}
       className={`w-max flex items-center gap-2 py-1 rounded-md ${
         hover && "hover:underline cursor-pointer"

@@ -8,10 +8,11 @@ import {
   AiOutlineDownload,
 } from "react-icons/ai";
 import Divider from "./Divider";
+import ReactToPrint from "react-to-print";
 
-function Header() {
+function Header({ resumeRef }: { resumeRef: any }) {
   return (
-    <div className="flex flex-col gap-y-5 lg:flex-row lg:justify-between lg:gap-y-0">
+    <div className="flex  gap-5 justify-between">
       <div>
         <h2 className="text-3xl font-lora mb-1">Md Saiful Islam Shanto.</h2>
         <p className="font-lora text-sm">Frontend Web Developer</p>
@@ -33,11 +34,16 @@ function Header() {
           <Divider />
           <IconButton hover text="Linkedin" icon={<AiOutlineLinkedin />} />
         </div>
-        <IconButton
-          style="bg-red-500 text-white border-none hover:bg-red-600"
-          border
-          icon={<AiOutlineDownload />}
-          text="Download Resume"
+        <ReactToPrint
+          content={() => resumeRef.current}
+          trigger={() => (
+            <IconButton
+              style="bg-red-500 text-white border-none hover:bg-red-600"
+              border
+              icon={<AiOutlineDownload />}
+              text="Download Resume"
+            />
+          )}
         />
       </div>
     </div>
