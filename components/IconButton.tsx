@@ -13,7 +13,7 @@ function IconButton({ icon, text, hover, link, border, style }: IProps) {
   return (
     <a
       href={link}
-      className={`w-max flex items-center gap-2 py-1 rounded-md bg-white ${
+      className={`w-max flex items-center gap-2 py-1 rounded-md ${
         hover && "hover:underline cursor-pointer"
       } ${border && `border cursor-pointer ${style} px-2`}`}
     >
