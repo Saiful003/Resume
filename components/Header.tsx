@@ -34,17 +34,6 @@ function Header({ resumeRef }: { resumeRef: any }) {
           <Divider />
           <IconButton hover text="Linkedin" icon={<AiOutlineLinkedin />} />
         </div>
-        <ReactToPrint
-          content={() => resumeRef.current}
-          trigger={() => (
-            <IconButton
-              style="bg-red-500 text-white border-none hover:bg-red-600"
-              border
-              icon={<AiOutlineDownload />}
-              text="Download Resume"
-            />
-          )}
-        />
       </div>
     </div>
   );
