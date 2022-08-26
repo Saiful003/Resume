@@ -9,7 +9,6 @@ import Skill from "../components/Skill";
 import TableRow from "../components/TableRow";
 import { projects } from "../Data/Projects";
 import { Skills } from "../Data/Skills";
-import ReactToPrint from "react-to-print";
 const Home: NextPage = () => {
   const resumeRef = useRef<HTMLDivElement>(null);
 
@@ -55,13 +54,26 @@ const Home: NextPage = () => {
               <tr className="border text-center">
                 <td className="border-r font-medium ">Exam</td>
                 <td className="border-r font-medium ">Board</td>
+                <td className="border-r font-medium ">Group</td>
                 <td className="border-r font-medium ">Year</td>
                 <td className="font-medium">Result</td>
               </tr>
             </thead>
             <tbody>
-              <TableRow examName="SSC" board="Dhaka" year={2019} gpa={4.5} />
-              <TableRow examName="HSC" board="Dhaka" year={2021} gpa={5.0} />
+              <TableRow
+                examName="SSC"
+                board="Dhaka"
+                year={2019}
+                gpa={4.5}
+                group="Science"
+              />
+              <TableRow
+                examName="HSC"
+                board="Dhaka"
+                year={2021}
+                gpa={5.0}
+                group="Science"
+              />
             </tbody>
           </table>
         </Section>
