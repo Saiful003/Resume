@@ -10,7 +10,4 @@ export const Skills: ISkill[] = [
   { skillName: "next.js" },
   { skillName: "redux" },
   { skillName: "redux-toolkit" },
-  { skillName: "node" },
-  { skillName: "express" },
-  { skillName: "mongodb" },
 ];

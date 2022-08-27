@@ -3,13 +3,7 @@ import { TbExternalLink } from "react-icons/tb";
 import { IProject } from "../types";
 import IconButton from "./IconButton";
 
-function Project({
-  projectId,
-  projectName,
-  projectShortDesc,
-  githubLink,
-  liveLink,
-}: IProject) {
+function Project({ projectId, projectName, githubLink, liveLink }: IProject) {
   return (
     <div>
       <h2 className="font-lora text-xl mb-2">
