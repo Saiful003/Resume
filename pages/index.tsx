@@ -12,9 +12,9 @@ import Skill from "../components/Skill";
 import TableRow from "../components/TableRow";
 import { projects } from "../Data/Projects";
 import { Skills } from "../Data/Skills";
+
 const Home: NextPage = () => {
   const resumeRef = useRef<HTMLDivElement>(null);
-
   return (
     <>
       <Head>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         ref={resumeRef}
         className="max-w-3xl mx-2 md:mx-auto my-2 border p-5 shadow-lg"
       >
-        <Header resumeRef={resumeRef} />
+        <Header />
         <Section>
           <SectionTitle>Objective</SectionTitle>
           <p className=" text-md font-pop">

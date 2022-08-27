@@ -8,9 +8,8 @@ import {
   AiOutlineDownload,
 } from "react-icons/ai";
 import Divider from "./Divider";
-import ReactToPrint from "react-to-print";
 
-function Header({ resumeRef }: { resumeRef: any }) {
+function Header() {
   return (
     <div className="flex  gap-5 justify-between">
       <div>
