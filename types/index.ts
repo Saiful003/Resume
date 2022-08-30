@@ -8,4 +8,8 @@ export interface IProject {
   projectShortDesc: string;
   githubLink: string;
   liveLink: string;
+  tech: {
+    fTech: string[];
+    bTech?: string[];
+  };
 }

@@ -2,20 +2,40 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { TbExternalLink } from "react-icons/tb";
 import { IProject } from "../types";
 import IconButton from "./IconButton";
+import Skill from "./Skill";
 
-function Project({ projectId, projectName, githubLink, liveLink }: IProject) {
+function Project({
+  projectId,
+  projectName,
+  githubLink,
+  liveLink,
+  tech: { fTech, bTech },
+}: IProject) {
   return (
     <div>
       <h2 className="font-lora text-xl mb-2">
         <span> {projectId} . </span> {projectName}
       </h2>
-      <p className="mb-3 font-pop">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas
-        asperiores corporis enim voluptate. Atque minima aut est ullam dolores!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        velit perferendis necessitatibus quasi consectetur a qui ut
-        exercitationem rem! Modi?
-      </p>
+
+      <div className="flex items-center gap-3 mb-2">
+        <h2 className="font-pop">Front-End Technologies :</h2>
+        <div className="flex gap-2">
+          {fTech.map((tech, i) => (
+            <Skill skillName={tech} key={i} />
+          ))}
+        </div>
+      </div>
+      {bTech && (
+        <div className="flex items-center gap-3">
+          <h2 className="font-pop">Back-End Technologies :</h2>
+          <div className="flex gap-2">
+            {bTech.map((tech, i) => (
+              <Skill skillName={tech} key={i} />
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="flex gap-2 mb-3">
         <IconButton
           style="hover:bg-gray-200"

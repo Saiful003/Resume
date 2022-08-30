@@ -10,6 +10,9 @@ export const projects: IProject[] = [
       "https://github.com/Saiful003/Next.js-Chat-Application-Client.git",
     liveLink:
       "https://saiful003-next-js-chat-application-client.vercel.app/login",
+    tech: {
+      fTech: ["react.js"],
+    },
   },
   {
     projectName: "React Ecommerce Application",
@@ -18,6 +21,9 @@ export const projects: IProject[] = [
     projectId: 2,
     githubLink: "https://github.com/Saiful003/React-Ecommerce.git",
     liveLink: "https://keen-cajeta-467df4.netlify.app",
+    tech: {
+      fTech: ["react.js"],
+    },
   },
   {
     projectName: "React Todo Application",
@@ -26,6 +32,10 @@ export const projects: IProject[] = [
     projectId: 3,
     githubLink: "https://github.com/Saiful003/React-Todo-Application.git",
     liveLink: "https://clinquant-kitten-c918d5.netlify.app",
+    tech: {
+      fTech: ["react.js"],
+      bTech: ["node.js", "express.js"],
+    },
   },
   {
     projectName: "React Story Application",
@@ -34,5 +44,8 @@ export const projects: IProject[] = [
     projectId: 4,
     githubLink: "https://github.com/Saiful003/React-Story-Application.git",
     liveLink: "https://romantic-allen-5893fd.netlify.app",
+    tech: {
+      fTech: ["react.js"],
+    },
   },
 ];
