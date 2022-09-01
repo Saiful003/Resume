@@ -6,7 +6,7 @@ interface IProps {
 
 function Skill({ skillName }: IProps) {
   return (
-    <div className="bg-indigo-100 inline-block px-5 py-1 rounded-md uppercase text-md font-pop">
+    <div className="inline-block px-5 py-1 border rounded-md text-md font-pop">
       {skillName}
     </div>
   );

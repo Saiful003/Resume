@@ -11,7 +11,8 @@ export const projects: IProject[] = [
     liveLink:
       "https://saiful003-next-js-chat-application-client.vercel.app/login",
     tech: {
-      fTech: ["react.js"],
+      fTech: ["next.js"],
+      bTech: ["node.js", "socket.io"],
     },
   },
   {
@@ -34,7 +35,6 @@ export const projects: IProject[] = [
     liveLink: "https://clinquant-kitten-c918d5.netlify.app",
     tech: {
       fTech: ["react.js"],
-      bTech: ["node.js", "express.js"],
     },
   },
   {

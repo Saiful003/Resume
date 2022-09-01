@@ -1,13 +1,12 @@
 import React from "react";
 import IconButton from "./IconButton";
+import Divider from "./Divider";
 import {
-  AiOutlineMail,
-  AiOutlinePhone,
   AiOutlineGithub,
   AiOutlineLinkedin,
-  AiOutlineDownload,
+  AiOutlineMail,
+  AiOutlinePhone,
 } from "react-icons/ai";
-import Divider from "./Divider";
 
 function Header() {
   return (

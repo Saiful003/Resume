@@ -1,5 +1,10 @@
+import React from "react";
+
 export interface ISkill {
   skillName: string;
+}
+export interface IChildren {
+  children: React.ReactNode;
 }
 
 export interface IProject {
